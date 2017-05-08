@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "TestCpp.hpp"
+#import "CPP_test.hpp"
+
 
 @interface ViewController ()
 
@@ -14,8 +17,31 @@
 
 @implementation ViewController
 
+
+void test()
+{
+    //Test *test = new Test();
+    CPP_test *testO = new CPP_test();
+    
+    
+    testO->test_Public();
+    
+    delete testO;
+    
+    CPP_test_child *child = new CPP_test_child();
+    
+    CPP_test_child test ;
+    test.test_Public();
+    
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    test();
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -23,5 +49,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 @end

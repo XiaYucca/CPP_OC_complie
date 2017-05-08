@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		C13ECB051C5C817400A6D809 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C13ECB041C5C817400A6D809 /* main.m */; };
 		C13ECB081C5C817400A6D809 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C13ECB071C5C817400A6D809 /* AppDelegate.m */; };
-		C13ECB0B1C5C817400A6D809 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13ECB0A1C5C817400A6D809 /* ViewController.m */; };
+		C13ECB0B1C5C817400A6D809 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C13ECB0A1C5C817400A6D809 /* ViewController.mm */; };
 		C13ECB0E1C5C817400A6D809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13ECB0C1C5C817400A6D809 /* Main.storyboard */; };
 		C13ECB101C5C817400A6D809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13ECB0F1C5C817400A6D809 /* Assets.xcassets */; };
 		C13ECB131C5C817400A6D809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13ECB111C5C817400A6D809 /* LaunchScreen.storyboard */; };
 		C13ECB1E1C5C817400A6D809 /* CPP_OC_complieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C13ECB1D1C5C817400A6D809 /* CPP_OC_complieTests.m */; };
 		C13ECB291C5C817400A6D809 /* CPP_OC_complieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C13ECB281C5C817400A6D809 /* CPP_OC_complieUITests.m */; };
+		C13ECB381C5C81CF00A6D809 /* TestCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C13ECB361C5C81CF00A6D809 /* TestCpp.cpp */; };
+		C13ECB3B1C5C829600A6D809 /* CPP_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C13ECB391C5C829600A6D809 /* CPP_test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 		C13ECB061C5C817400A6D809 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C13ECB071C5C817400A6D809 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C13ECB091C5C817400A6D809 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C13ECB0A1C5C817400A6D809 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C13ECB0A1C5C817400A6D809 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		C13ECB0D1C5C817400A6D809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C13ECB0F1C5C817400A6D809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C13ECB121C5C817400A6D809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		C13ECB241C5C817400A6D809 /* CPP_OC_complieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPP_OC_complieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13ECB281C5C817400A6D809 /* CPP_OC_complieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPP_OC_complieUITests.m; sourceTree = "<group>"; };
 		C13ECB2A1C5C817400A6D809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C13ECB361C5C81CF00A6D809 /* TestCpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestCpp.cpp; sourceTree = "<group>"; };
+		C13ECB371C5C81CF00A6D809 /* TestCpp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TestCpp.hpp; sourceTree = "<group>"; };
+		C13ECB391C5C829600A6D809 /* CPP_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPP_test.cpp; sourceTree = "<group>"; };
+		C13ECB3A1C5C829600A6D809 /* CPP_test.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPP_test.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,14 @@
 		C13ECB021C5C817400A6D809 /* CPP_OC_complie */ = {
 			isa = PBXGroup;
 			children = (
+				C13ECB391C5C829600A6D809 /* CPP_test.cpp */,
+				C13ECB3A1C5C829600A6D809 /* CPP_test.hpp */,
+				C13ECB361C5C81CF00A6D809 /* TestCpp.cpp */,
+				C13ECB371C5C81CF00A6D809 /* TestCpp.hpp */,
 				C13ECB061C5C817400A6D809 /* AppDelegate.h */,
 				C13ECB071C5C817400A6D809 /* AppDelegate.m */,
 				C13ECB091C5C817400A6D809 /* ViewController.h */,
-				C13ECB0A1C5C817400A6D809 /* ViewController.m */,
+				C13ECB0A1C5C817400A6D809 /* ViewController.mm */,
 				C13ECB0C1C5C817400A6D809 /* Main.storyboard */,
 				C13ECB0F1C5C817400A6D809 /* Assets.xcassets */,
 				C13ECB111C5C817400A6D809 /* LaunchScreen.storyboard */,
@@ -270,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C13ECB0B1C5C817400A6D809 /* ViewController.m in Sources */,
+				C13ECB0B1C5C817400A6D809 /* ViewController.mm in Sources */,
 				C13ECB081C5C817400A6D809 /* AppDelegate.m in Sources */,
+				C13ECB3B1C5C829600A6D809 /* CPP_test.cpp in Sources */,
 				C13ECB051C5C817400A6D809 /* main.m in Sources */,
+				C13ECB381C5C81CF00A6D809 /* TestCpp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				C13ECB2F1C5C817400A6D809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C13ECB301C5C817400A6D809 /* Build configuration list for PBXNativeTarget "CPP_OC_complieTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				C13ECB321C5C817400A6D809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C13ECB331C5C817400A6D809 /* Build configuration list for PBXNativeTarget "CPP_OC_complieUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				C13ECB351C5C817400A6D809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
